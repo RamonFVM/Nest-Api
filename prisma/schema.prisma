@@ -13,9 +13,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 model Users{
-  id String @id
   name String
+  id String @id @default(cuid())
   email String @unique
   password String
-  createdAt DateTime
+  createdAt  DateTime @default(now())
 }
