@@ -10,8 +10,5 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('hello')
-  getRamon():string{
-    return this.appService.hellowRamon();
-  }
+
 }
